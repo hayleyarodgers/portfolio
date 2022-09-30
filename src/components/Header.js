@@ -5,7 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
-export default function PortfolioContainer() {
+export default function Header() {
   const [currentPage, setCurrentPage] = useState('About');
 
   // Depending on the value of currentPage, the corresponding component is rendered.
@@ -27,11 +27,14 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* Pass currentPage and the function to update it to Navigation. */}
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
+      <header>
+        <h1>Hayley Rodgers</h1>
+        {/* Pass currentPage and the function to update it to Navigation. */}
+        <Navigation
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      </header>
       {/* Return a component. */}
       {renderPage()}
     </div>

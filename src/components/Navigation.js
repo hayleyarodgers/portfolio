@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Destructure props object to get currentPage state variable and method for handling page change.
-function Navigation({ currentPage, handlePageChange }) {
+export default function Navigation({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
@@ -51,5 +51,3 @@ function Navigation({ currentPage, handlePageChange }) {
     </ul>
   );
 }
-
-export default Navigation;
