@@ -67,6 +67,15 @@ a,
   color: var(--blue);
 }
 
+a:hover,
+.nav-link:hover {
+  color: var(--blue);
+}
+
+.nav-link:focus {
+  color: var(--blue)
+}
+
 .card {
   min-width: 25vw;
   max-width: 80vw;
