@@ -8,10 +8,13 @@ import Contact from "./pages/Contact";
 export default function Header() {
   const [currentPage, setCurrentPage] = useState("About");
 
+  // Handle page change using currentPage state variable.
+  const handlePageChange = (page) => setCurrentPage(page);
+
   // Depending on the value of currentPage, the corresponding component is rendered.
   const renderPage = () => {
     if (currentPage === "About") {
-      return <About />;
+      return <About handlePageChange={handlePageChange} />;
     }
     if (currentPage === "Portfolio") {
       return <Portfolio />;
@@ -21,9 +24,6 @@ export default function Header() {
     }
     return <Contact />;
   };
-
-  // Handle page change using currentPage state variable.
-  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>

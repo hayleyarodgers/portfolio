@@ -2,7 +2,7 @@ import React from "react";
 import profileIcon from "../../assets/images/hayleyrodgers.png";
 import "../../styles/about.css";
 
-export default function About() {
+export default function About({ handlePageChange }) {
   return (
     <main>
       <h2>About me</h2>
@@ -23,8 +23,11 @@ export default function About() {
       <h3>I'm currently...</h3>
       <p>
         Completing a certificate in full stack web development from the
-        University of Sydney. Click <a href="#resume">here</a> to learn about
-        how I got to this point.
+        University of Sydney. Click{" "}
+        <a href="#resume" onClick={() => handlePageChange("Resume")}>
+          here
+        </a>{" "}
+        to learn about how I got to this point.
       </p>
       <br />
       <h3>My skills include...</h3>
@@ -37,8 +40,11 @@ export default function About() {
         <li>And, React.js.</li>
       </ul>
       <p>
-        Click <a href="#portfolio">here</a> to see these skills (and more!) in
-        action.
+        Click{" "}
+        <a href="#portfolio" onClick={() => handlePageChange("Portfolio")}>
+          here
+        </a>{" "}
+        to see these skills (and more!) in action.
       </p>
       <br />
       <h3>I'm looking for...</h3>
@@ -46,7 +52,11 @@ export default function About() {
         Opportunities to use my new skills, champion my professional development
         through mentorship and involve working towards a meaningful mission as
         part of a wider team. If it sounds like we might be on the same
-        wavelength, please click <a href="#contact">here</a> to get in touch.
+        wavelength, please click{" "}
+        <a href="#contact" onClick={() => handlePageChange("Contact")}>
+          here
+        </a>{" "}
+        to get in touch.
       </p>
     </main>
   );
