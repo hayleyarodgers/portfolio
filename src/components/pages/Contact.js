@@ -3,7 +3,7 @@ import "../../styles/contact.css";
 
 import linkedinLogo from "../../assets/images/linkedinLogo.png";
 import githubLogo from "../../assets/images/githubLogo.png";
-import emailLogo from "../../assets/images/emailLogo.png";
+import emailIcon from "../../assets/images/emailIcon.png";
 
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
@@ -54,7 +54,7 @@ export default function Contact() {
           href="mailto:hayleyarodgers88@gmail.com"
           target="_blank"
           rel="noopener noreferrer">
-          <img src={emailLogo} alt="Email logo" />
+          <img src={emailIcon} alt="Email logo" />
         </a>
       </div>
       <br />
