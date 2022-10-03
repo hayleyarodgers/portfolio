@@ -35,20 +35,6 @@ export default function Contact() {
     }
   };
 
-  // Check fields aren't empty and email is valid
-  if (!name) {
-    setNameErrorMessage("Please add your name.");
-    return;
-  }
-  if (!email || !validateEmail(email)) {
-    setEmailErrorMessage("Please add a valid email address.");
-    return;
-  }
-  if (!message) {
-    setMessageErrorMessage("Please add your message.");
-    return;
-  }
-
   // Note: no back end so unable to code for submitting messages yet.
   const handleFormSubmit = (event) => {
     // Prevent page refresh
@@ -118,36 +104,64 @@ export default function Contact() {
         <Form.Control
           type="text"
           name="name"
-          className="mb-3"
+          className="mb-2"
+          onBlur={(event) => {
+            const { target } = event;
+            const inputValue = target.value;
+            setName(inputValue);
+
+            !name
+              ? setNameErrorMessage("Please add your name.")
+              : setNameErrorMessage("");
+          }}
           onChange={handleInputChange}
           placeholder="Your name"
           aria-describedby="nameHelpBlock"
         />
-        <Form.Text id="nameHelpBlock" muted>
+        <Form.Text id="nameHelpBlock" className="mb-4" muted>
           {nameErrorMessage}
         </Form.Text>
         <Form.Control
           type="email"
           name="email"
-          className="mb-3"
+          className="mb-2"
+          onBlur={(event) => {
+            const { target } = event;
+            const inputValue = target.value;
+            setEmail(inputValue);
+
+            !email || !validateEmail(email)
+              ? setEmailErrorMessage("Please add a valid email address.")
+              : setEmailErrorMessage("");
+          }}
           onChange={handleInputChange}
           placeholder="Your email"
           aria-describedby="emailHelpBlock"
         />
-        <Form.Text id="emailHelpBlock" muted>
+        <Form.Text id="emailHelpBlock" className="mb-4" muted>
           {emailErrorMessage}
         </Form.Text>
         <Form.Control
           as="textarea"
           name="message"
-          className="mb-3"
+          className="mb-2"
+          onBlur={(event) => {
+            const { target } = event;
+            const inputValue = target.value;
+            setMessage(inputValue);
+
+            !message
+              ? setMessageErrorMessage("Please add your message.")
+              : setMessageErrorMessage("");
+          }}
           onChange={handleInputChange}
           placeholder="Your message"
           aria-describedby="messageHelpBlock"
         />
-        <Form.Text id="messageHelpBlock" muted>
+        <Form.Text id="messageHelpBlock" className="mb-4" muted>
           {messageErrorMessage}
         </Form.Text>
+        <br />
         <Button variant="primary" type="submit" onClick={handleFormSubmit}>
           Send
         </Button>
