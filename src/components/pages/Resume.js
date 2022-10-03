@@ -1,13 +1,13 @@
-import React from 'react';
-import '../../styles/resume.css';
-import resume from '../../assets/pdfs/resume.pdf';
+import React from "react";
+import "../../styles/resume.css";
+import resume from "../../assets/pdfs/resume.pdf";
 
 export default function Resume() {
   return (
     <main>
       <h2>My resume</h2>
       <p>
-        To download a copy of my resume, click{' '}
+        To download a copy of my resume, click{" "}
         <a href={resume} download target="_blank" rel="noopener noreferrer">
           here
         </a>

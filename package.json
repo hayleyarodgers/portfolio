@@ -22,7 +22,7 @@
     "eject": "react-scripts eject"
   },
   "prettier": {
-    "singleQuote": true,
+    "singleQuote": false,
     "jsxBracketSameLine": true,
     "printWidth": 80,
     "tabWidth": 2,

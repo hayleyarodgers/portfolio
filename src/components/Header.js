@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import Navigation from './Navigation';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import React, { useState } from "react";
+import Navigation from "./Navigation";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
 export default function Header() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState("About");
 
   // Depending on the value of currentPage, the corresponding component is rendered.
   const renderPage = () => {
-    if (currentPage === 'About') {
+    if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === 'Portfolio') {
+    if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    if (currentPage === 'Resume') {
+    if (currentPage === "Resume") {
       return <Resume />;
     }
     return <Contact />;

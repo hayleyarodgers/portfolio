@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // Destructure props object to get currentPage state variable and method for handling page change.
 export default function Navigation({ currentPage, handlePageChange }) {
@@ -7,21 +7,21 @@ export default function Navigation({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#about"
-          onClick={() => handlePageChange('About')}
+          onClick={() => handlePageChange("About")}
           // Use ternary operator to check if the current page is "About".
           // If it is, use Bootstrap's active link class.
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
+          className={currentPage === "About" ? "nav-link active" : "nav-link"}>
           ABOUT
         </a>
       </li>
       <li className="nav-item">
         <a
           href="#portfolio"
-          onClick={() => handlePageChange('Portfolio')}
+          onClick={() => handlePageChange("Portfolio")}
           // Use ternary operator to check if the current page is "Portfolio".
           // If it is, use Bootstrap's active link class.
           className={
-            currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
+            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
           }>
           PORTFOLIO
         </a>
@@ -29,21 +29,21 @@ export default function Navigation({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#resume"
-          onClick={() => handlePageChange('Resume')}
+          onClick={() => handlePageChange("Resume")}
           // Use ternary operator to check if the current page is "Resume".
           // If it is, use Bootstrap's active link class.
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
+          className={currentPage === "Resume" ? "nav-link active" : "nav-link"}>
           RESUME
         </a>
       </li>
       <li className="nav-item">
         <a
           href="#contact"
-          onClick={() => handlePageChange('Contact')}
+          onClick={() => handlePageChange("Contact")}
           // Use ternary operator to check if the current page is "Contact".
           // If it is, use Bootstrap's active link class.
           className={
-            currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
+            currentPage === "Contact" ? "nav-link active" : "nav-link"
           }>
           CONTACT
         </a>

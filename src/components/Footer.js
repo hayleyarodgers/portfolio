@@ -1,8 +1,8 @@
-import React from 'react';
-import linkedinLogo from '../assets/images/linkedinLogo.png';
-import githubLogo from '../assets/images/githubLogo.png';
-import emailLogo from '../assets/images/emailLogo.png';
-import '../styles/footer.css';
+import React from "react";
+import linkedinLogo from "../assets/images/linkedinLogo.png";
+import githubLogo from "../assets/images/githubLogo.png";
+import emailLogo from "../assets/images/emailLogo.png";
+import "../styles/footer.css";
 
 export default function Footer() {
   return (

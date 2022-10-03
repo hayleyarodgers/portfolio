@@ -1,6 +1,6 @@
-import React from 'react';
-import profileIcon from '../../assets/images/hayleyrodgers.png';
-import '../../styles/about.css';
+import React from "react";
+import profileIcon from "../../assets/images/hayleyrodgers.png";
+import "../../styles/about.css";
 
 export default function About() {
   return (
