@@ -7,7 +7,7 @@ import "../styles/footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div id="contact-bar">
+      <div className="contact-bar my-4">
         <a
           href="https://www.linkedin.com/in/hayleyarodgers/"
           target="_blank"
