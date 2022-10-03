@@ -84,3 +84,7 @@ a,
   background-color: var(--blue);
   border-color: var(--blue);
 }
+
+.form-control {
+  font-size: 1.8rem;
+}
