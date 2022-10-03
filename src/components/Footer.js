@@ -28,8 +28,15 @@ export default function Footer() {
         </a>
       </div>
       <i>
-        Made using React on Gadigal Land. To see the source code, click
-        <a href="https://github.com/hayleyarodgers/portfolio"> here</a>.
+        Made using React.js on Gadigal Land. To see the source code, click
+        <a
+          href="https://github.com/hayleyarodgers/portfolio"
+          target="_blank"
+          rel="noopener noreferrer">
+          {" "}
+          here
+        </a>
+        .
       </i>
     </footer>
   );
