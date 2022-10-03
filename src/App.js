@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="container-fluid">
+    <div>
       <Header />
       <br />
       <br />
