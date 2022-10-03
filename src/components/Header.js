@@ -29,11 +29,15 @@ export default function Header() {
     <div>
       <header>
         <h1>Hayley Rodgers</h1>
+        <i>Full stack web developer.</i>
+        <hr className="mx-auto" />
         {/* Pass currentPage and the function to update it to Navigation. */}
         <Navigation
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
+        <hr className="mx-auto" />
+        <br />
       </header>
       {/* Return a component. */}
       {renderPage()}
