@@ -3,7 +3,7 @@ import React from 'react';
 // Destructure props object to get currentPage state variable and method for handling page change.
 export default function Navigation({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav justify-content-center">
       <li className="nav-item">
         <a
           href="#about"
@@ -11,7 +11,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           // Use ternary operator to check if the current page is "About".
           // If it is, use Bootstrap's active link class.
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
-          About
+          ABOUT
         </a>
       </li>
       <li className="nav-item">
@@ -23,7 +23,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           className={
             currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
           }>
-          Portfolio
+          PORTFOLIO
         </a>
       </li>
       <li className="nav-item">
@@ -33,7 +33,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           // Use ternary operator to check if the current page is "Resume".
           // If it is, use Bootstrap's active link class.
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
-          Resume
+          RESUME
         </a>
       </li>
       <li className="nav-item">
@@ -45,7 +45,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
           className={
             currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
           }>
-          Contact
+          CONTACT
         </a>
       </li>
     </ul>
