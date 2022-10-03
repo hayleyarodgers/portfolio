@@ -7,15 +7,15 @@ export default function Resume() {
     <main>
       <h2>My resume</h2>
       <p>
-        To download a copy of my resume, click{" "}
-        <a href={resume} download target="_blank" rel="noopener noreferrer">
+        To view a downloadable copy, click{" "}
+        <a href={resume} target="_blank" rel="noopener noreferrer">
           here
         </a>
-        .
+        . Otherwise, keep reading!
       </p>
       <br />
       <div id="resume-skills" className="d-flex">
-        <div className="pr-5">
+        <div className="pe-5">
           <h3>Front-end skills</h3>
           <ul className="formatted-list">
             <li>HTML5</li>
@@ -28,7 +28,7 @@ export default function Resume() {
             <li>And, responsive design.</li>
           </ul>
         </div>
-        <div className="pl-5">
+        <div className="ps-5">
           <h3>Back-end skills</h3>
           <ul className="formatted-list">
             <li>APIs</li>

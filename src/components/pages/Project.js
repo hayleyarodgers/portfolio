@@ -1,39 +1,48 @@
 import React from "react";
 
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
+
 export default function Project(props) {
   return (
-    <div>
+    <Row xs={1} md={2} lg={3} className="g-5">
       {props.projects.map((project) => (
-        <div className="card rounded-0 mb-5 px-0" key={project.id}>
-          <img
-            className="card-img-top"
-            src={project.screenshot}
-            alt="Project screenshot"
-          />
-          <div className="card-body">
-            <h3 className="card-title">{project.name}</h3>
-            <i className="card-text">{project.technologies}</i>
-            <p className="card-text">{project.description}</p>
-            <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-lg btn-primary mx-2 rounded-0">
-                CODE
-              </button>
-            </a>
-            {project.liveAppURL ? (
-              <a
-                href={project.liveAppURL}
+        <Col key={project.id}>
+          <Card className="rounded-0 h-100">
+            <Card.Img
+              variant="top"
+              src={project.screenshot}
+              alt="Project screenshot"
+              className="rounded-0"
+            />
+            <Card.Body>
+              <h3>{project.name}</h3>
+              <i>{project.technologies}</i>
+              <Card.Text>{project.description}</Card.Text>
+              <Button
+                variant="primary"
+                href={project.repoURL}
                 target="_blank"
                 rel="noopener noreferrer">
-                <button className="btn btn-lg btn-primary mx-2 rounded-0">
+                CODE
+              </Button>{" "}
+              {project.liveAppURL ? (
+                <Button
+                  variant="primary"
+                  href={project.liveAppURL}
+                  target="_blank"
+                  rel="noopener noreferrer">
                   LIVE APP
-                </button>
-              </a>
-            ) : (
-              ""
-            )}
-          </div>
-        </div>
+                </Button>
+              ) : (
+                ""
+              )}
+            </Card.Body>
+          </Card>
+        </Col>
       ))}
-    </div>
+    </Row>
   );
 }

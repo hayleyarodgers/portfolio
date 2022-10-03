@@ -1,69 +1,78 @@
 import React from "react";
 import "../../styles/contact.css";
 
+import linkedinLogo from "../../assets/images/linkedinLogo.png";
+import githubLogo from "../../assets/images/githubLogo.png";
+import emailLogo from "../../assets/images/emailLogo.png";
+
+import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+
 export default function Contact() {
   return (
     <main className="contact">
       <h2>Contact me</h2>
-      <br />
-      <h3>LinkedIn</h3>
-      <a href="https://www.linkedin.com/in/hayleyarodgers/">
-        https://www.linkedin.com/in/hayleyarodgers/
-      </a>
-      <br />
-      <br />
-      <h3>GitHub</h3>
-      <a href="https://github.com/hayleyarodgers">
-        https://github.com/hayleyarodgers
-      </a>
-      <br />
-      <br />
-      <h3>Email</h3>
-      <a href="mailto:hayleyarodgers88@gmail.com">hayleyarodgers88@gmail.com</a>
-      <br />
-      <br />
-      <h3>Or message me directly!</h3>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-6 mx-auto">
-            <form className="contact-form">
-              <label className="d-flex justify-content-between my-4" for="name">
-                Name
-                <input
-                  className="w-75 form-control"
-                  id="name"
-                  name="name"
-                  type="text"
-                />
-              </label>
-              <label
-                className="d-flex justify-content-between my-4"
-                for="email">
-                Email
-                <input
-                  className="w-75 form-control"
-                  id="email"
-                  name="email"
-                  type="email"
-                />
-              </label>
-              <label
-                className="d-flex justify-content-between my-4"
-                for="message">
-                Message
-                <textarea
-                  rows="3"
-                  className="w-75 form-control"
-                  id="message"
-                  placeholder="Write your message here."></textarea>
-              </label>
-              <button className="btn btn-lg btn-primary rounded-0 my-4">
-                SEND
-              </button>
-            </form>
-          </div>
-        </div>
+      <p>
+        Let's connect via{" "}
+        <a
+          href="https://www.linkedin.com/in/hayleyarodgers/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        ,{" "}
+        <a
+          href="https://github.com/hayleyarodgers"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>{" "}
+        or{" "}
+        <a
+          href="mailto:hayleyarodgers88@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          Email
+        </a>
+        .
+      </p>
+      <div className="large-contact-bar my-4">
+        <a
+          href="https://www.linkedin.com/in/hayleyarodgers/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src={linkedinLogo} alt="LinkedIn logo" />
+        </a>
+        <a
+          href="https://github.com/hayleyarodgers"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src={githubLogo} alt="GitHub logo" />
+        </a>
+        <a
+          href="mailto:hayleyarodgers88@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src={emailLogo} alt="Email logo" />
+        </a>
       </div>
+      <br />
+      <Form className="w-50 mx-auto">
+        <h3>Or, get in touch directly!</h3>
+        <FloatingLabel label="Your name" className="mb-3">
+          <Form.Control type="text" />
+        </FloatingLabel>
+        <FloatingLabel label="Your email address" className="mb-3">
+          <Form.Control type="email" />
+        </FloatingLabel>
+        <FloatingLabel label="Your message" className="mb-3">
+          <Form.Control as="textarea" />
+        </FloatingLabel>
+        <Button variant="primary" type="submit">
+          Send
+        </Button>
+      </Form>
     </main>
   );
 }

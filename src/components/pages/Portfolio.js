@@ -11,7 +11,7 @@ const projects = [
   {
     id: 1,
     name: "Tech blog",
-    technologies: "Node.js, Express.js, Sequelize, Handlebars, Bootstrap",
+    technologies: "Node.js, Express.js, Sequelize, Handlebars",
     description:
       "Full stack application where developers can publish and comment on blog posts.",
     repoURL: "https://github.com/hayleyarodgers/tech-blog",
@@ -21,7 +21,7 @@ const projects = [
   {
     id: 2,
     name: "Pawfect Match",
-    technologies: "Node.js, Express.js, Sequelize, Handlebars, Bootstrap",
+    technologies: "Node.js, Express.js, Sequelize, Handlebars",
     description:
       "Full stack application that matches pets needing adoption with new owners.",
     repoURL: "https://github.com/hayleyarodgers/pawfect-match",
@@ -31,10 +31,9 @@ const projects = [
   {
     id: 3,
     name: "Recipe Findr",
-    technologies:
-      "Javascript, Bootstrap, Fetch API, Youtube API, Spoonacular API",
+    technologies: "Fetch API, Youtube API, Spoonacular API",
     description:
-      "Front end application that gives users video tutorials for recipes that use ingredients they have at hand.",
+      "Front end application that gives users video tutorials for recipes using their ingredients.",
     repoURL: "https://github.com/hayleyarodgers/recipe-finder",
     liveAppURL: "https://hayleyarodgers.github.io/recipe-finder/",
     screenshot: recipeFindrScreenshot,
@@ -43,7 +42,8 @@ const projects = [
     id: 4,
     name: "Social Network API",
     technologies: "Node.js, Express.js, MongoDB, Mongoose",
-    description: "Back end for a social network web application.",
+    description:
+      "Back end for a social network web application for sharing thoughts with friends.",
     repoURL: "https://github.com/hayleyarodgers/social-network-api",
     screenshot: socialMediaAPIScreenshot,
   },
@@ -60,9 +60,9 @@ const projects = [
   {
     id: 6,
     name: "Weather Dashboard",
-    technologies: "Javascript, Bootstrap, Moment.js, OpenWeather API",
+    technologies: "Javascript, Moment.js, OpenWeather API",
     description:
-      "Front-end application that shows the current and predicted weather for a selected city.",
+      "Front end application that shows the current and predicted weather for a selected city.",
     repoURL: "https://github.com/hayleyarodgers/weather-dashboard",
     liveAppURL: "https://hayleyarodgers.github.io/weather-dashboard/",
     screenshot: weatherDashboardScreenshot,
@@ -73,10 +73,18 @@ export default function Portfolio() {
   return (
     <main>
       <h2>My portfolio</h2>
-      <p className="mb-5">Check out some of my most recent projects below.</p>
-      <div className="card-deck">
-        <Project projects={projects} />
-      </div>
+      <p className="mb-5">
+        I've built <i>stacks</i> of applications, including full stack, back
+        end, front end and command line. You can find them all on{" "}
+        <a
+          href="https://github.com/hayleyarodgers?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer">
+          my Github
+        </a>
+        . Here are some of my most recent ones!
+      </p>
+      <Project projects={projects} />
     </main>
   );
 }
