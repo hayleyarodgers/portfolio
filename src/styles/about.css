@@ -7,3 +7,14 @@
 #profile-icon img {
   max-width: 80%;
 }
+
+@media screen and (max-width: 576px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profile-icon img {
+    max-width: 30vw;
+  }
+}

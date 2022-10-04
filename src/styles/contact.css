@@ -40,3 +40,13 @@
 .overlay:hover {
   opacity: 0;
 }
+
+@media screen and (max-width: 576px) {
+  .contact h2::before {
+    display: none;
+  }
+
+  .large-contact-bar {
+    display: none;
+  }
+}

@@ -109,3 +109,9 @@ h1:hover {
 .form-control {
   font-size: 1.8rem;
 }
+
+@media screen and (max-width: 576px) {
+  h2::after {
+    display: none;
+  }
+}
