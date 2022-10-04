@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import "../../styles/contact.css";
 
 import linkedinLogo from "../../assets/images/linkedinLogo.png";
+import linkedinLogoOrange from "../../assets/images/linkedinLogoOrange.png";
 import githubLogo from "../../assets/images/githubLogo.png";
+import githubLogoOrange from "../../assets/images/githubLogoOrange.png";
 import emailIcon from "../../assets/images/emailIcon.png";
+import emailIconOrange from "../../assets/images/emailIconOrange.png";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -83,19 +86,28 @@ export default function Contact() {
           href="https://www.linkedin.com/in/hayleyarodgers/"
           target="_blank"
           rel="noopener noreferrer">
-          <img src={linkedinLogo} alt="LinkedIn logo" />
+          <div className="icon-container">
+            <img src={linkedinLogo} alt="LinkedIn logo" className="overlay" />
+            <img src={linkedinLogoOrange} alt="LinkedIn logo" />
+          </div>
         </a>
         <a
           href="https://github.com/hayleyarodgers"
           target="_blank"
           rel="noopener noreferrer">
-          <img src={githubLogo} alt="GitHub logo" />
+          <div className="icon-container">
+            <img src={githubLogo} alt="GitHub logo" className="overlay" />
+            <img src={githubLogoOrange} alt="GitHub logo" />
+          </div>
         </a>
         <a
           href="mailto:hayleyarodgers88@gmail.com"
           target="_blank"
           rel="noopener noreferrer">
-          <img src={emailIcon} alt="Email logo" />
+          <div className="icon-container">
+            <img src={emailIcon} alt="Email icon" className="overlay" />
+            <img src={emailIconOrange} alt="Email icon" />
+          </div>
         </a>
       </div>
       <br />
