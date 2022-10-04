@@ -4,6 +4,7 @@ import resume from "../assets/pdfs/resume.pdf";
 
 import linkedinLogo from "../assets/images/linkedinLogo.png";
 import githubLogo from "../assets/images/githubLogo.png";
+import phoneIcon from "../assets/images/phoneIcon.png";
 import emailIcon from "../assets/images/emailIcon.png";
 import resumeIcon from "../assets/images/resumeIcon.png";
 
@@ -29,10 +30,13 @@ export default function Footer() {
           href="mailto:hayleyarodgers88@gmail.com"
           target="_blank"
           rel="noopener noreferrer">
-          <img src={emailIcon} alt="Email logo" />
+          <img src={emailIcon} alt="Email" />
+        </a>
+        <a href="tel:+61478239095" target="_blank" rel="noopener noreferrer">
+          <img src={phoneIcon} alt="Phone" />
         </a>
         <a href={resume} target="_blank" rel="noopener noreferrer">
-          <img src={resumeIcon} alt="Email logo" />
+          <img src={resumeIcon} alt="Resume" />
         </a>
       </div>
       <p>Hayley Rodgers, 2022</p>
