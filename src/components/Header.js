@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <div>
       <header>
-        <a href="/">
+        <a href="/portfolio/#about">
           <h1>Hayley Rodgers</h1>
         </a>
         <i>Full stack web developer.</i>
