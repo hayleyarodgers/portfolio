@@ -28,9 +28,7 @@ export default function Header() {
   return (
     <div>
       <header>
-        <a href="/portfolio/#about">
-          <h1>Hayley Rodgers</h1>
-        </a>
+        <h1>Hayley Rodgers</h1>
         <i>Full stack web developer.</i>
         <hr className="mx-auto" />
         {/* Pass currentPage and the function to update it to Navigation. */}
