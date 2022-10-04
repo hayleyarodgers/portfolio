@@ -5,7 +5,8 @@
   font-size: 62.5%;
   --font-main: 'Spectral', serif;
   --font-code: 'Inconsolata', monospace;
-  --blue: #1233FF;
+  --blue: #1233ff;
+  --orange: #ff6d00;
   --grey: rgb(85, 85, 85);
 }
 
@@ -18,6 +19,10 @@ body {
   font-size: 1.8rem;
   line-height: 1.7;
   padding: 5% 10%;
+}
+
+main {
+  text-align: left;
 }
 
 h1, 
@@ -58,10 +63,6 @@ h3 {
   font-size: 2rem;
 }
 
-main {
-  text-align: left;
-}
-
 hr {
   width: 75%;
 }
@@ -73,8 +74,9 @@ a,
 }
 
 a:hover,
-.nav-link:hover {
-  color: var(--blue);
+.nav-link:hover,
+h1:hover {
+  color: var(--orange);
 }
 
 .nav-link:focus {
@@ -97,6 +99,11 @@ a:hover,
   font-size: 1.8rem;
   background-color: var(--blue);
   border-color: var(--blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--orange);
+  border-color: var(--orange);
 }
 
 .form-control {
