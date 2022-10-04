@@ -11,60 +11,80 @@ const projects = [
   {
     id: 1,
     name: "Tech blog",
+    type: "Individual project",
     technologies: "Node.js, Express.js, Sequelize, Handlebars",
-    description:
+    descriptionSummary:
       "Full stack application where developers can publish and comment on blog posts.",
+    descriptionElaboration:
+      "Users can post, update and delete their thoughts on development-related topics. This aims to help promote the sharing of information between people.",
     repoURL: "https://github.com/hayleyarodgers/tech-blog",
-    liveAppURL: "https://hayleyarodgers-tech-blog.herokuapp.com/",
+    demoURL: "https://hayleyarodgers-tech-blog.herokuapp.com/",
     screenshot: techBlogScreenshot,
   },
   {
     id: 2,
     name: "Pawfect Match",
+    type: "Group project: team lead, front end designer",
     technologies: "Node.js, Express.js, Sequelize, Handlebars",
-    description:
+    descriptionSummary:
       "Full stack application that matches pets needing adoption with new owners.",
+    descriptionElaboration:
+      "Users can post their pet for adoption or respond to posts for adoption. This aims to help give adoptive pets a second chance and help people access the benefits of having a pet.",
     repoURL: "https://github.com/hayleyarodgers/pawfect-match",
-    liveAppURL: "https://pawfect---match.herokuapp.com/",
+    demoURL: "https://pawfect---match.herokuapp.com/",
     screenshot: pawfectMatchScreenshot,
   },
   {
     id: 3,
     name: "Recipe Findr",
+    type: "Group project: team lead, functions related to data persistence",
     technologies: "Fetch API, Youtube API, Spoonacular API",
-    description:
-      "Front end application that gives users video tutorials for recipes using their ingredients.",
+    descriptionSummary:
+      "Front end application that gives users video tutorials for recipes using ingredients they have at hand.",
+    descriptionElaboration:
+      "Users can enter up to three ingredients of their choice, before selecting a recipe and being given a corresponding video tutorial. This aims to help empower the user to try new meals, in addition to reducing time spent shopping and food wastage.",
     repoURL: "https://github.com/hayleyarodgers/recipe-finder",
-    liveAppURL: "https://hayleyarodgers.github.io/recipe-finder/",
+    demoURL: "https://hayleyarodgers.github.io/recipe-finder/",
     screenshot: recipeFindrScreenshot,
   },
   {
     id: 4,
     name: "Social Network API",
+    type: "Individual project",
     technologies: "Node.js, Express.js, MongoDB, Mongoose",
-    description:
+    descriptionSummary:
       "Back end for a social network web application for sharing thoughts with friends.",
+    descriptionElaboration:
+      "Users can share their thoughts, react to friends’ thoughts and create a friend list. This API would be particularly useful for a social media startup wanting a NoSQL database so their website can handle large amounts of unstructured data.",
     repoURL: "https://github.com/hayleyarodgers/social-network-api",
+    demoURL:
+      "https://drive.google.com/file/d/1ukaohNaUZ7Fchgvq31qvmOVNolPErSYx/view?usp=sharing",
     screenshot: socialMediaAPIScreenshot,
   },
   {
     id: 5,
     name: "Text Editor",
+    type: "Individual project",
     technologies: "Webpack, Workbox, PWAs, IndexedDB",
-    description:
-      "Progressive web application for taking notes with or without an internet connection.",
+    descriptionSummary:
+      "Progressive web application for taking notes or code snippets.",
+    descriptionElaboration:
+      "The use of code bundling, caching, a service worker and an IndexedDB database mean that notes can be taken with or without an internet connection. This means the user can reliably retrieve their notes for later use.",
     repoURL: "https://github.com/hayleyarodgers/pwa-text-editor",
-    liveAppURL: "https://hayleyarodgers-pwa-text-editor.herokuapp.com/",
+    demoURL: "https://hayleyarodgers-pwa-text-editor.herokuapp.com/",
     screenshot: textEditorScreenshot,
   },
   {
     id: 6,
     name: "Weather Dashboard",
+    type: "Individual project",
     technologies: "Javascript, Moment.js, OpenWeather API",
-    description:
+    descriptionSummary:
       "Front end application that shows the current and predicted weather for a selected city.",
+    descriptionElaboration:
+      "There is a search function that allows the user to select a city, which is then added to the search history. The user is then able to look through their search history and click between the weather for multiple cities. This may be particularly useful when travelling.",
     repoURL: "https://github.com/hayleyarodgers/weather-dashboard",
-    liveAppURL: "https://hayleyarodgers.github.io/weather-dashboard/",
+    demoURL: "https://hayleyarodgers.github.io/weather-dashboard/",
     screenshot: weatherDashboardScreenshot,
   },
 ];

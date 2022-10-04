@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 
 export default function Project(props) {
   return (
-    <Row xs={1} md={2} lg={3} className="g-5">
+    <Row xs={1} md={2} className="g-5">
       {props.projects.map((project) => (
         <Col key={project.id}>
           <Card className="rounded-0 h-100">
@@ -19,8 +19,12 @@ export default function Project(props) {
             />
             <Card.Body>
               <h3>{project.name}</h3>
-              <i>{project.technologies}</i>
-              <Card.Text>{project.description}</Card.Text>
+              <h4>{project.type}</h4>
+              <p>
+                <i>{project.technologies}</i>
+              </p>
+              <Card.Text>{project.descriptionSummary}</Card.Text>
+              <Card.Text>{project.descriptionElaboration}</Card.Text>
               <Button
                 variant="primary"
                 href={project.repoURL}
@@ -28,13 +32,13 @@ export default function Project(props) {
                 rel="noopener noreferrer">
                 CODE
               </Button>{" "}
-              {project.liveAppURL ? (
+              {project.demoURL ? (
                 <Button
                   variant="primary"
                   href={project.liveAppURL}
                   target="_blank"
                   rel="noopener noreferrer">
-                  LIVE APP
+                  DEMO
                 </Button>
               ) : (
                 ""
