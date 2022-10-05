@@ -7,7 +7,7 @@
 
 ## Description
 
-My goal for this project was to create a professional portfolio using my React skills to showcase my skills and examples of my work. This is so potential collaborators and employers can determine whether I might be a good fit for them.
+My goal for this project was to create a professional portfolio using React to showcase my skills and examples of my work. This is to help potential collaborators and employers determine whether I might be a good fit for working with them.
 
 ### Tools and Technologies Used
 
