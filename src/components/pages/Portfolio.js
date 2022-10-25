@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./Project";
+import proScreenshot from "../../assets/images/proScreenshot.png";
 import techBlogScreenshot from "../../assets/images/techBlogScreenshot.png";
 import pawfectMatchScreenshot from "../../assets/images/pawfectMatchScreenshot.png";
 import recipeFindrScreenshot from "../../assets/images/recipeFindrScreenshot.png";
@@ -8,6 +9,19 @@ import textEditorScreenshot from "../../assets/images/textEditorScreenshot.png";
 import weatherDashboardScreenshot from "../../assets/images/weatherDashboardScreenshot.png";
 
 const projects = [
+  {
+    id: 0,
+    name: "Pro",
+    type: "Individual project",
+    technologies: "Mongoose, Express, React, Node, REST",
+    descriptionSummary:
+      "Full stack application that predicts when a software project will be complete.",
+    descriptionElaboration:
+      "After entering information about the people in your team and what they'll be working on, Pro produces an estimation of when each person is expected to finish their part of the project, allowing the user to plan projects more accurately.",
+    repoURL: "https://github.com/hayleyarodgers/project-management-tool",
+    demoURL: "https://hayleyarodgers-pro.herokuapp.com/",
+    screenshot: proScreenshot,
+  },
   {
     id: 1,
     name: "Tech blog",
