@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a0cd8301.css",
-    "main.js": "/portfolio/static/js/main.c001b38c.js",
+    "main.js": "/portfolio/static/js/main.9fd2003f.js",
     "static/media/recipeFindrScreenshot.png": "/portfolio/static/media/recipeFindrScreenshot.4d15a7c2ba4141fc9490.png",
     "static/media/pawfectMatchScreenshot.png": "/portfolio/static/media/pawfectMatchScreenshot.f70a99a231b1825bab69.png",
     "static/media/socialMediaAPIScreenshot.png": "/portfolio/static/media/socialMediaAPIScreenshot.d09c6be2ec1dbb8606a9.png",
+    "static/media/portfolioScreenshot.png": "/portfolio/static/media/portfolioScreenshot.30d18eb0491091968b72.png",
     "static/media/hayleyrodgers.png": "/portfolio/static/media/hayleyrodgers.ba2a8dc9e2b25f98de1a.png",
     "static/media/textEditorScreenshot.png": "/portfolio/static/media/textEditorScreenshot.6e95bad370dc333f93d7.png",
     "static/media/proScreenshot.png": "/portfolio/static/media/proScreenshot.bbf62388083e6ef7f103.png",
     "static/media/weatherDashboardScreenshot.png": "/portfolio/static/media/weatherDashboardScreenshot.49e40e36328cf1b71b7c.png",
     "static/media/techBlogScreenshot.png": "/portfolio/static/media/techBlogScreenshot.96a3ad3af110fa142fc8.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.ec1c803217dec2b34bef.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.5609df0e59e03482b642.pdf",
     "static/media/phoneIcon.png": "/portfolio/static/media/phoneIcon.978f3b0411146f060288.png",
     "static/media/phoneIconOrange.png": "/portfolio/static/media/phoneIconOrange.71fc177845855e48742e.png",
     "static/media/githubLogo.png": "/portfolio/static/media/githubLogo.6d2e7459cbc1820c862e.png",
@@ -23,10 +24,10 @@
     "static/media/githubLogoOrange.png": "/portfolio/static/media/githubLogoOrange.121d4c07cc79c28f2f4c.png",
     "index.html": "/portfolio/index.html",
     "main.a0cd8301.css.map": "/portfolio/static/css/main.a0cd8301.css.map",
-    "main.c001b38c.js.map": "/portfolio/static/js/main.c001b38c.js.map"
+    "main.9fd2003f.js.map": "/portfolio/static/js/main.9fd2003f.js.map"
   },
   "entrypoints": [
     "static/css/main.a0cd8301.css",
-    "static/js/main.c001b38c.js"
+    "static/js/main.9fd2003f.js"
   ]
 }
