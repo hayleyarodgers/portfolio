@@ -55,9 +55,9 @@ export default function Resume() {
           </p>
           <ul className="formatted-list">
             <li>
-              Created a highly customised, automated, scalable work management
-              system using Jira software plus training guides to transition an
-              80+ person team into using it.
+              Engineered a highly customised, automated, scalable workflow
+              management system using Jira software plus extensive Confluence
+              training guides to transition an 80+ person team into using it.
             </li>
             <li>
               Integrated content and sales systems (Jira and HubSpot) to
@@ -65,9 +65,10 @@ export default function Resume() {
               efficient responses to customer requests.
             </li>
             <li>
-              Created a management information system to provide accurate,
-              quantitative reports on employee performance, resulting in more
-              than a 300% reduction in time spent on manual calculations.
+              Created a GoogleSheets-based system to provide quantitative
+              reports on employee performance, resulting in a more than 300%
+              reduction in time spent by managers on manual calculations per
+              month.
             </li>
             <li>
               Routinely analysed the latest developments in ed-tech and
@@ -88,12 +89,12 @@ export default function Resume() {
           </p>
           <ul className="formatted-list">
             <li>
-              Planned/managed sprints and strategised resource allocation to
-              leverage the team’s strengths, eliminate bottlenecks and hit
-              ambitious goals.
+              Planned and managed Agile sprints in Jira whilst strategising
+              resource allocation to leverage the team’s strengths, eliminate
+              bottlenecks and hit ambitious company goals.
             </li>
             <li>
-              Ran monthly team meetings, events and 1:1s to communicate
+              Ran monthly team meetings, social events and 1:1s to communicate
               feedback, set and maintain expectations, foster company culture
               and boost team morale.
             </li>
@@ -102,8 +103,8 @@ export default function Resume() {
               across Australia and the UK.
             </li>
             <li>
-              Onboarded and trained 15+ new staff members resulting in 95%
-              employee retention.
+              Interviewed, onboarded and trained 15+ new staff members resulting
+              in 95% employee retention.
             </li>
             <li>Awarded MVP of the Content Team 2020.</li>
           </ul>
@@ -118,12 +119,12 @@ export default function Resume() {
           </p>
           <ul className="formatted-list">
             <li>
-              Reviewed and edited written, visual and audio content at multiple
-              stages of production to uphold strict quality standards.
+              Reviewed, edited and uploaded written, visual and audio content at
+              multiple stages of production to uphold strict quality standards.
             </li>
             <li>
-              Facilitated regular feedback sessions to discuss strategies for
-              improvement.
+              Facilitated regular in-person feedback sessions to discuss
+              strategies for improvement.
             </li>
           </ul>
         </div>
@@ -131,14 +132,18 @@ export default function Resume() {
           <h4>Biology Content Creator at Atomi, Jan 2017 - May 2018</h4>
           <p>
             <i>
-              Planned, scripted, designed and produced educational videos and
-              quizzes for Y11-12 Biology students.
+              Created educational science content for Y11-12 Biology students.
             </i>
           </p>
           <ul className="formatted-list">
             <li>
-              Consulted with the marketing team and created marketing content
-              for the company’s blog and social media.
+              Planned, scripted, wireframed, designed and produced educational
+              videos and quizzes using a combination of Keynote, Camtasia and
+              GoogleSheets.
+            </li>
+            <li>
+              Consulted with the marketing team to create content for the
+              company’s blog and social media.
             </li>
             <li>Awarded Best Rookie Season 2017.</li>
           </ul>
@@ -153,7 +158,7 @@ export default function Resume() {
             <i>The University of Sydney Coding Bootcamp</i>
           </p>
           <ul className="formatted-list">
-            <li>98% average.</li>
+            <li>99% average.</li>
           </ul>
         </div>
         <div className="timeline-item">

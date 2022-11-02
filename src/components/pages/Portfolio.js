@@ -7,6 +7,7 @@ import recipeFindrScreenshot from "../../assets/images/recipeFindrScreenshot.png
 import socialMediaAPIScreenshot from "../../assets/images/socialMediaAPIScreenshot.png";
 import textEditorScreenshot from "../../assets/images/textEditorScreenshot.png";
 import weatherDashboardScreenshot from "../../assets/images/weatherDashboardScreenshot.png";
+import portfolioScreenshot from "../../assets/images/portfolioScreenshot.png";
 
 const projects = [
   {
@@ -100,6 +101,19 @@ const projects = [
     repoURL: "https://github.com/hayleyarodgers/weather-dashboard",
     demoURL: "https://hayleyarodgers.github.io/weather-dashboard/",
     screenshot: weatherDashboardScreenshot,
+  },
+  {
+    id: 7,
+    name: "Portfolio",
+    type: "Individual project",
+    technologies: "Javascript, React, React-Bootstrap",
+    descriptionSummary:
+      "Front end application that showcases my skills, experience and examples of my work.",
+    descriptionElaboration:
+      "This is the code for my current professional portfolio (that is, the site you're seeing now!). This was my first application built using React and it aims to help potential collaborators and employers determine whether I might be a good fit for working with them. ",
+    repoURL: "https://github.com/hayleyarodgers/portfolio",
+    demoURL: "https://hayleyarodgers.github.io/portfolio/",
+    screenshot: portfolioScreenshot,
   },
 ];
 

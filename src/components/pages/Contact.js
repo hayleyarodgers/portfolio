@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+// import React, { useState } from "react";
 
 import "../../styles/contact.css";
 
@@ -9,50 +10,50 @@ import githubLogoOrange from "../../assets/images/githubLogoOrange.png";
 import emailIcon from "../../assets/images/emailIcon.png";
 import emailIconOrange from "../../assets/images/emailIconOrange.png";
 
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
 
-import { validateEmail } from "../../utils/helpers";
+// import { validateEmail } from "../../utils/helpers";
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const [nameErrorMessage, setNameErrorMessage] = useState("");
-  const [emailErrorMessage, setEmailErrorMessage] = useState("");
-  const [messageErrorMessage, setMessageErrorMessage] = useState("");
+  // const [nameErrorMessage, setNameErrorMessage] = useState("");
+  // const [emailErrorMessage, setEmailErrorMessage] = useState("");
+  // const [messageErrorMessage, setMessageErrorMessage] = useState("");
 
-  const handleInputChange = (event) => {
-    const { target } = event;
-    const inputType = target.name;
-    const inputValue = target.value;
+  // const handleInputChange = (event) => {
+  //   const { target } = event;
+  //   const inputType = target.name;
+  //   const inputValue = target.value;
 
-    // Based on the input type, set the state of the field
-    if (inputType === "name") {
-      setName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
+  //   // Based on the input type, set the state of the field
+  //   if (inputType === "name") {
+  //     setName(inputValue);
+  //   } else if (inputType === "email") {
+  //     setEmail(inputValue);
+  //   } else {
+  //     setMessage(inputValue);
+  //   }
+  // };
 
-  // Note: no back end so unable to code for submitting messages yet.
-  const handleFormSubmit = (event) => {
-    // Prevent page refresh
-    event.preventDefault();
+  // // Note: no back end so unable to code for submitting messages yet.
+  // const handleFormSubmit = (event) => {
+  //   // Prevent page refresh
+  //   event.preventDefault();
 
-    // Coming soon
+  //   // Coming soon
 
-    // Clear form after a successful message
-    setName("");
-    setEmail("");
-    setMessage("");
-    setNameErrorMessage("");
-    setEmailErrorMessage("");
-    setMessageErrorMessage("");
-  };
+  //   // Clear form after a successful message
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  //   setNameErrorMessage("");
+  //   setEmailErrorMessage("");
+  //   setMessageErrorMessage("");
+  // };
 
   return (
     <main className="contact">
@@ -77,7 +78,7 @@ export default function Contact() {
           href="mailto:hayleyarodgers88@gmail.com"
           target="_blank"
           rel="noopener noreferrer">
-          Email
+          email
         </a>
         .
       </p>
@@ -110,8 +111,8 @@ export default function Contact() {
           </div>
         </a>
       </div>
-      <br />
-      <Form className="w-50 mx-auto">
+      {/* Form for contact, to be implemented later */}
+      {/* <Form className="w-50 mx-auto">
         <h3>Or, get in touch directly!</h3>
         <Form.Control
           type="text"
@@ -177,7 +178,7 @@ export default function Contact() {
         <Button variant="primary" type="submit" onClick={handleFormSubmit}>
           Send
         </Button>
-      </Form>
+      </Form> */}
     </main>
   );
 }

@@ -20,9 +20,9 @@ export default function About({ handlePageChange }) {
         </div>
       </div>
       <br />
-      <h3>I'm currently...</h3>
+      <h3>I recently...</h3>
       <p>
-        Completing a certificate in full stack web development from the
+        Completed a certificate in full stack web development from the
         University of Sydney. Click{" "}
         <a href="#resume" onClick={() => handlePageChange("Resume")}>
           here
