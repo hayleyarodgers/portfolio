@@ -73,14 +73,7 @@ export default function Contact() {
           rel="noopener noreferrer">
           GitHub
         </a>{" "}
-        or{" "}
-        <a
-          href="mailto:hayleyarodgers88@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer">
-          email
-        </a>
-        .
+        or email me directly at hayleyarodgers88@gmail.com.
       </p>
       <div className="large-contact-bar my-4">
         <a
